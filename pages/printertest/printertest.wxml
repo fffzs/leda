@@ -1,0 +1,30 @@
+<van-cell-group>
+  <van-field
+    value="{{ deviceId }}"
+    label="{{language.DeviceID}}"
+    border="{{ false }}"
+    bind:change="onChange"
+    required
+  />
+  <van-field
+    value="{{ testnum }}"
+    label="{{language.TestNum}}"
+    border="{{ false }}"
+    bind:change="onChange1"
+    required
+    type="number"
+  />
+</van-cell-group>
+<van-button type="primary" bindtap='StartTest' size="large" disabled='{{testing}}'>{{language.StartTest}}</van-button>
+<van-button bindtap='StopTest' size="large" disabled='{{!testing}}'>{{language.StopTest}}</van-button>
+<van-cell
+  title="测试成功次数"
+  value="{{successnum}}"
+  size="large"
+/>
+<van-cell
+  title="测试失败次数"
+  value="{{failnum}}"
+  size="large"
+/>
+<van-progress percentage="{{progress}}" />

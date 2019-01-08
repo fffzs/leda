@@ -1,0 +1,38 @@
+page {
+  background-color: #f8f8f8;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 30rpx 0 30rpx;
+  align-items: center;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-style: none none solid none;
+  border-bottom-color: lightgray;
+}
+.list-item:last-child {
+  border-style: none;
+}
+.button {
+  height: 60%;
+  width: 690rpx;
+  margin-top: 5px;
+}
+.connect{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

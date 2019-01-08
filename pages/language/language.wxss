@@ -1,0 +1,10 @@
+.langview{
+  background-color: #00ffff;
+  height: 50px;
+  margin: 5px;
+  
+}
+.radio{
+  position: relative;
+  top: 10px;
+}

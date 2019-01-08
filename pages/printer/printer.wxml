@@ -1,0 +1,22 @@
+<view class="container">
+<view class='connect'>
+  <text style="flex:1;font-size:medium;word-break:break-all">{{language.DeviceName}}：{{name}}</text>
+  <text style="flex:1;font-size:medium;color:gray;word-break:break-all">{{language.DeviceID}}：{{deviceId}}</text>
+  <text style="flex:1;font-size:medium;color:gray">{{language.State}}：{{connected?language.Connected:language.Disconnected}}</text>
+  
+</view>
+<button type="primary" class="button" bindtap="Selftest" hidden='{{!connected}}'>{{language.PrintSelfTestPage}}</button>
+<button type="primary" class="button" loading="{{searching}}" bindtap="Search">{{searching?language.Searching:language.SearchBTDevice}}</button>
+  <scroll-view scroll-y style="width:690rpx;height:{{connected?'70%':'80%'}};">
+    <block wx:for="{{devicesList}}" wx:key="deviceId">
+      <view class="list-item" id="{{item.deviceId}}" bindtap="Connect">
+        <view style="display:flex;flex-direction:column;width:80%">
+          <text style="font-size:medium;word-break:break-all">{{language.DeviceName}}: {{item.name}}</text>
+          <text style="font-size:x-small;color:gray;word-break:break-all">{{language.DeviceID}}: {{item.deviceId}}</text>
+          <text style="font-size:x-small;color:gray;word-break:break-all">{{language.SignalIntensity}}RSSI: {{item.RSSI}}</text>
+        </view>
+        <image style="width:36px;height:36px" mode="aspectFit" src="/images/bluetooth.png"></image>
+      </view>
+    </block>
+  </scroll-view>
+</view>

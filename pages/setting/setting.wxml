@@ -1,0 +1,47 @@
+<!-- <view class='setview'>
+  <navigator url='../printer/printer'>
+  <image class='setleftimg' src='../../images/print.png'></image>
+  <text class='setlefttext'>打印机</text>
+  <text class='setrighttext'>{{bledeviceId}}</text>
+  <image class='setrightimg' src='../../images/rightpoint.png'></image>
+  </navigator>
+</view>
+<view class='setview'>
+  <navigator url='../language/language'>
+  <image class='setleftimg' src='../../images/earth.png'></image>
+  <text class='setlefttext'>语言</text>
+  <image class='setrightimg' src='../../images/rightpoint.png'></image>
+  </navigator>
+</view>
+<view class='setview'>
+  <navigator url='../indicator/indicator'>
+  <image class='setleftimg' src='../../images/indicator.png'></image>
+  <text class='setlefttext'>提示</text>
+  <image class='setrightimg' src='../../images/rightpoint.png'></image>
+  </navigator>
+</view> -->
+<van-cell
+  title="{{language.printer}}"
+  value="{{name}}"
+  is-link
+  size="large"
+  url="/pages/printer/printer"
+/>
+<van-cell
+  title="{{language.language}}"
+  is-link
+  size="large"
+  url="/pages/language/language"
+/>
+<!-- <van-cell
+  title="{{language.tips}}"
+  is-link
+  size="large"
+  url="/pages/tips/tips"
+/> -->
+<van-cell
+  title="{{language.printerconnecttest}}"
+  is-link
+  size="large"
+  url="/pages/printertest/printertest"
+/>

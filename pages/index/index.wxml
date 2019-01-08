@@ -1,0 +1,63 @@
+<!--导航条-->
+<!-- <view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view> -->
+ <van-tabs sticky scroll-top="{{ scrollTop }}" animated swipeable>
+  <van-tab title="{{language.homepage}}">
+    <view id='editview'>
+  <navigator url='../edit/edit' hover-class='none' id='editnavi'>
+    <image src='../../images/edit.png' id='editimg' mode='aspectFit'></image>
+  </navigator>
+  </view>
+  <view id='newopensetview'>
+    <view class='nosview'>
+      <navigator url="../new/new" hover-class="none" id='newnavi'>
+        <image src='../../images/new.png' class='imgnavi'></image>
+      </navigator>
+    </view>
+    <view class='nosview'>
+      <navigator url="../open/open" hover-class="none" id='opennavi'>
+        <image src='../../images/open.png' class='imgnavi' ></image>
+      </navigator>
+    </view>
+    <view class='nosview'>
+      <navigator url='../setting/setting' hover-class='none' id='setnavi'>
+        <image src='../../images/setting.png' class='imgnavi' ></image>
+      </navigator>
+    </view>
+  </view>
+
+  </van-tab>
+  <van-tab title="{{language.printpage}}">{{language.printpage}}</van-tab>
+  <van-tab title="{{language.printmorepage}}">{{language.printmorepage}}</van-tab>
+</van-tabs>
+<!--首页-->
+<!-- <view hidden="{{currentTab!==0}}">
+  <view>
+  <navigator url='../edit/edit' hover-class='none' id='editnavi'>
+    <image src='../../images/edit.png' id='editimg' mode='aspectFit'></image>
+    <text id='edittext'>编辑</text>
+  </navigator>
+  </view>
+  <view id='newopensetview'>
+      <navigator url="../new/new" hover-class="none" id='newnavi'>
+        <image src='../../images/new.png' class='imgnavi' bindtap='imgnaviclick'></image>
+      </navigator>
+      <navigator url="../open/open" hover-class="none" id='opennavi'>
+        <image src='../../images/open.png' class='imgnavi' ></image>
+      </navigator>
+      <navigator url='../setting/setting' hover-class='none' id='setnavi'>
+        <image src='../../images/setting.png' class='imgnavi' ></image>
+      </navigator>
+  </view>
+</view> -->
+ 
+<!--打印-->
+<view hidden="{{currentTab!==1}}">
+  {{language.printpage}}
+</view>
+ 
+<!--打印多份-->
+<view hidden="{{currentTab!==2}}">
+  {{language.printmorepage}}
+</view>

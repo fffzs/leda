@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/new/new",
+    "pages/print/print",
+    "pages/prints/prints",
+    "pages/open/open",
+    "pages/setting/setting",
+    "pages/edit/edit",
+    "pages/printer/printer",
+    "pages/language/language",
+    "pages/printertest/printertest"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "乐打标签",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "usingComponents": {
+    "van-tab": "dist/tab/index",
+    "van-tabs": "dist/tabs/index",
+    "van-tabbar": "dist/tabbar/index",
+    "van-tabbar-item": "dist/tabbar-item/index",
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+    "van-checkbox": "dist/checkbox/index",
+    "van-checkbox-group": "dist/checkbox-group/index",
+    "van-radio": "dist/radio/index",
+    "van-radio-group": "dist/radio-group/index",
+    "van-panel": "dist/panel/index",
+    "van-toast": "dist/toast/index",
+    "van-field": "dist/field/index",
+    "van-button": "dist/button/index",
+    "van-progress": "dist/progress/index"
+  }
+
+}
