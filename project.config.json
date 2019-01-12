@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.3",
+	"libVersion": "2.5.0",
 	"appid": "wxa885127ad28fab30",
 	"projectname": "leda",
 	"debugOptions": {

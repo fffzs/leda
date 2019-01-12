@@ -28,3 +28,4 @@
   size="large"
 />
 <van-progress percentage="{{progress}}" />
+<van-toast id="van-toast" />
